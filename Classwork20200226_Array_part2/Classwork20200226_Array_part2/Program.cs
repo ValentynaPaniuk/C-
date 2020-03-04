@@ -254,29 +254,30 @@ namespace Classwork20200226_Array_part2
          */
 
             Random d = new Random();
-            int[] D = new int[15];
+            int[] D = new int[10];
+            int count = 0;
+            
+           
             for (int i = 0; i < D.Length; i++)
             {
                 D[i] = d.Next(10, 50);
             }
 
+            Console.Write("====================================================\n");
             for (int i = 0; i < D.Length; i++)
             {
-                Console.WriteLine($"D[{i}] = {D[i]}");
+                Console.Write(D[i] + " ");
+               
             }
+            Console.Write("\n====================================================\n");
 
-            int count = 0;
-            for (int i = 0; i < D.Length; i++)
+
+            int tmp = 0;
+            for (int i = 0; i < D.Length -1; i++)
             {
-                for (int j = 1; j < D.Length-1; j++)
-                {
-                    if (D[i] < D[j])
-                    {
-                        Console.WriteLine($"D[{j}] = {D[j]}");
-                      
-                    }
-                }
-                Console.Write("\n");
+                
+                                        
+                
             }
             Console.WriteLine($"Counter = {count}  ");
 
