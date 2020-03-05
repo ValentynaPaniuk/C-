@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Classwork20200304_House
 {
-    class Window
+    class Window : IPart
     {
         string str;
         public Window()

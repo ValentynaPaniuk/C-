@@ -38,14 +38,28 @@ TeamLeader (Бригадир).
 В конечном итоге на консоль выводится сообщение, что строительство дома завершено и отображается “рисунок дома” (вариант отображения выбрать самостоятельно).*/
 
             
-            House house = new House(150);
-            Team myTeam = new Team();
-            myTeam.Name = "Andriy";
-            myTeam.House = house;
-            myTeam.ShowData();
-           
+            //House house = new House(150);
+            //Worker worker = new Worker();
+            //worker.Name = "Andriy";
+            //worker.House = house;
+            //worker.ShowData();
 
-            
+            List<IPart> parts = new List<IPart>();
+            parts.Add(new Roof());
+            parts.Add(new Walls());
+            parts.Add(new Basement());
+            parts.Add(new Window());
+            parts.Add(new Door());
+
+            foreach (var e in parts)
+            {
+                e.ShowData();
+            }
+
+            Console.ReadLine();
+
+
+
 
 
 

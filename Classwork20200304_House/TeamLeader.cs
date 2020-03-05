@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Classwork20200304_House
 {
-    class TeamLeader
+    class TeamLeader : IWorker
     {
-        public string Work()
+        public void Work()
         {
-            return " The house is built! ";
+           Console.WriteLine(" Team Leader said: The house is built! ");
         }
     }
 }
