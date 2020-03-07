@@ -8,31 +8,42 @@ namespace Classwork20200304_House
 {
     class House 
     {
-
-
-        protected int area;
         protected Basement basement;
         protected Walls walls;
         protected Door door;
         protected Window window;
         protected Roof roof;
 
+        public House()
+        { }
 
-        public House(int area)
+        public House(Basement basement)
         {
-            this.area = area;
-            this.basement = new Basement();
+         this.basement = new Basement();
+         }
+
+        public House(Basement basement, Walls walls)
+        {
             this.walls = new Walls();
+        }
+
+        public House(Basement basement, Walls walls, Door door)
+        {
             this.door = new Door();
+        }
+
+        public House(Basement basement, Walls walls, Door door, Window window)
+        {
             this.window = new Window();
+
+        }
+
+        public House(Basement basement, Walls walls, Door door, Window window, Roof roof) //: this(basement, walls, door, window) : this (basement, walls, door) : this (basement, walls) : this (basement)
+        {
             this.roof = new Roof();
-
         }
+       
 
-        public int Area
-        { get { return area; }
-            set { area = value; }
-        }
         public Door Door
         {
             get { return door; }
@@ -67,7 +78,8 @@ namespace Classwork20200304_House
 
         public virtual void ShowData()
         {
-            Console.WriteLine("I am a house, my area is {0} m2.", area);
+            Console.WriteLine("I am a house");
+
         }
 
 

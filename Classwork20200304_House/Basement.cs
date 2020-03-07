@@ -9,6 +9,7 @@ namespace Classwork20200304_House
     class Basement :IPart
     {
         string str;
+
         public Basement()
         {
             str =  "============";
@@ -22,7 +23,7 @@ namespace Classwork20200304_House
 
         public void ShowData()
         {
-            Console.WriteLine($"Basement\n{str}");
+            Console.WriteLine($"1. Basement\n{str}");
 
         }
 

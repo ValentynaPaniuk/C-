@@ -44,25 +44,18 @@ TeamLeader (Бригадир).
             //worker.House = house;
             //worker.ShowData();
 
-            List<IPart> parts = new List<IPart>();
-            parts.Add(new Roof());
-            parts.Add(new Walls());
-            parts.Add(new Basement());
-            parts.Add(new Window());
-            parts.Add(new Door());
+            
 
-            foreach (var e in parts)
-            {
-                e.ShowData();
-            }
+            IWorker team = new Team();
+            team.Work();
+            team.ShowHouse();
+            IWorker teamLeader = new TeamLeader();
+            teamLeader.ShowHouse();
+
+           
+            
 
             Console.ReadLine();
-
-
-
-
-
-
         }
     }
 }

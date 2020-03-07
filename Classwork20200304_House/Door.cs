@@ -10,6 +10,7 @@ namespace Classwork20200304_House
     {
         string str;
 
+
         public Door()
         {
             str = "===\n| |\n===";
@@ -23,7 +24,7 @@ namespace Classwork20200304_House
 
         public void ShowData()
         {
-            Console.WriteLine(($"Door\n{str}"));
+            Console.WriteLine(($"3. Door\n{str}"));
            
         }
     }

@@ -23,7 +23,7 @@ namespace Classwork20200304_House
         public void ShowData()
         {
            
-            Console.WriteLine(($"Walls\n{str}"));
+            Console.WriteLine(($"2. Walls\n{str}"));
         }
 
 

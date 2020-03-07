@@ -15,7 +15,7 @@ namespace Classwork20200304_House
         public Worker()
         {
             name = "Stive";
-            house = new House(150);
+            house = new House();
         }
 
         public Worker(string name, House house)
@@ -35,15 +35,17 @@ namespace Classwork20200304_House
             set { house = value; }
         }
 
+
+        
         public void ShowData()
         {
             Console.WriteLine("My name is {0}.", name);
-            house.ShowData();
-            house.Roof.ShowData();
-            house.Window.ShowData();
+                             
+            house.Basement.ShowData();
             house.Walls.ShowData();
             house.Door.ShowData();
-            house.Basement.ShowData();
+            house.Window.ShowData();
+            house.Roof.ShowData();
 
 
 
