@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{797FD583-FE99-4C8B-951B-61474C0B0693}</ProjectGuid>
+    <ProjectGuid>{8FFD34E0-75E3-405C-8A45-3FCCEC373B86}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Classwork20200304_House</RootNamespace>
-    <AssemblyName>Classwork20200304_House</AssemblyName>
+    <RootNamespace>Homework_House</RootNamespace>
+    <AssemblyName>Homework_House</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,15 +47,11 @@
     <Compile Include="Door.cs" />
     <Compile Include="House.cs" />
     <Compile Include="IPart.cs" />
-    <Compile Include="IWorker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Roof.cs" />
-    <Compile Include="Team.cs" />
-    <Compile Include="TeamLeader.cs" />
     <Compile Include="Walls.cs" />
     <Compile Include="Window.cs" />
-    <Compile Include="Worker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("Classwork20200304_House")]
+[assembly: AssemblyTitle("Homework_House")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Classwork20200304_House")]
+[assembly: AssemblyProduct("Homework_House")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("797fd583-fe99-4c8b-951b-61474c0b0693")]
+[assembly: Guid("8ffd34e0-75e3-405c-8a45-3fccec373b86")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //
