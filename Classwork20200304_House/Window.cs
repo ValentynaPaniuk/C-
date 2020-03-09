@@ -8,21 +8,14 @@ namespace Classwork20200304_House
 {
     class Window : IPart
     {
-        string str;
-        public Window()
-        {
-            str =  "***\n: :\n***";
-        }
+        string part;
+        public Window() { part =  "***\n: :\n***"; }
 
-        public string Str
-        {
-            get { return str; }
-            set { str = value; }
-        }
+       
 
         public void ShowData()
         {
-            Console.WriteLine(($"4. Window\n{str}"));
+            Console.WriteLine(($"4. Window\n{part}"));
 
         }
 

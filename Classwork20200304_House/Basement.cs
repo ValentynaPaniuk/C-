@@ -8,22 +8,14 @@ namespace Classwork20200304_House
 {
     class Basement :IPart
     {
-        string str;
+        string part { get; set; }
 
-        public Basement()
-        {
-            str =  "============";
-        }
+        public Basement()  { part =  "============"; }
 
-        public string Str
-        {
-            get { return str; }
-            set { str = value; }
-        }
 
         public void ShowData()
         {
-            Console.WriteLine($"1. Basement\n{str}");
+            Console.WriteLine($"1. Basement\n{part}");
 
         }
 

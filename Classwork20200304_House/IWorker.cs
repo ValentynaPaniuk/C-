@@ -8,6 +8,7 @@ namespace Classwork20200304_House
 {
     interface IWorker
     {
+
         void Work();
         void ShowHouse();
     }

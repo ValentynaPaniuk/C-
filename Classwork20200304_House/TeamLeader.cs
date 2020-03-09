@@ -8,7 +8,7 @@ namespace Classwork20200304_House
 {
     class TeamLeader : IWorker
     {
-        protected House house = new House();
+        
         protected List<IPart> parts = new List<IPart>();
 
 

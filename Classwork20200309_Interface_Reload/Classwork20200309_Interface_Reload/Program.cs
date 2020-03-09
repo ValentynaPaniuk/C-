@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Classwork20200304_House
+namespace Classwork20200309_Interface_Reload
 {
-    interface IPart
+    class Program
     {
-        
-        void ShowData();
+        static void Main(string[] args)
+        {
+        }
     }
 }

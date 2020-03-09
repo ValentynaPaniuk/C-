@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Classwork20200304_House
+namespace Classwork20200309_Interface_Reload
 {
-    interface IPart
+    interface IVehicle
     {
-        
-        void ShowData();
+        string Engine { get; set; }
+
     }
 }

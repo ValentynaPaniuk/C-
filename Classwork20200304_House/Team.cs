@@ -10,6 +10,7 @@ namespace Classwork20200304_House
     {
         protected House house = new House();
         protected List<IPart> parts = new List<IPart>();
+       
 
         protected int counterBasement = 1;
         protected int counterWalls = 4;
@@ -19,8 +20,10 @@ namespace Classwork20200304_House
 
         public void Work()
         {
-            Console.WriteLine(" Start of construction ");
+           
+            Console.WriteLine(" Start of construction: ");
 
+            house.ShowData();
             while (counterBasement != 0)
             {
                 parts.Add(new Basement()); counterBasement--;

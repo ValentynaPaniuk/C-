@@ -8,21 +8,13 @@ namespace Classwork20200304_House
 {
     class Roof : IPart
     {
-        string str;
-        public Roof()
-        {
-            str =  "-----------";
-        }
+        string part { get; set; }
+        public Roof() {  part =  "-----------";   }
 
-        public string Str
-        {
-            get { return str; }
-            set { str = value; }
-        }
 
         public void ShowData()
         {
-            Console.WriteLine(($"5. Roof\n{str}"));
+            Console.WriteLine(($"5. Roof\n{part}"));
 
         }
 

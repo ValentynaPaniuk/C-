@@ -8,23 +8,14 @@ namespace Classwork20200304_House
 {
     class Door : IPart
     {
-        string str;
+        string part { get; set; }
 
 
-        public Door()
-        {
-            str = "===\n| |\n===";
-        }
-
-        public string Str
-        {
-            get { return str; }
-            set { str = value; }
-        }
+        public Door() { part = "===\n| |\n==="; }
 
         public void ShowData()
         {
-            Console.WriteLine(($"3. Door\n{str}"));
+            Console.WriteLine(($"3. Door\n{part}"));
            
         }
     }

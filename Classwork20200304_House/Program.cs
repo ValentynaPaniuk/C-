@@ -51,10 +51,8 @@ TeamLeader (Бригадир).
             team.ShowHouse();
             IWorker teamLeader = new TeamLeader();
             teamLeader.ShowHouse();
-
-           
+                     
             
-
             Console.ReadLine();
         }
     }

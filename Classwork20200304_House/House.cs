@@ -15,32 +15,42 @@ namespace Classwork20200304_House
         protected Roof roof;
 
         public House()
-        { }
+        {
+            Console.WriteLine("Default constructor");
+        }
 
         public House(Basement basement)
         {
          this.basement = new Basement();
-         }
+            Console.WriteLine("Overload constructor (Basement)");
+        }
 
         public House(Basement basement, Walls walls)
         {
+            
             this.walls = new Walls();
+            Console.WriteLine("Overload constructor (Basement, Walls)");
         }
 
         public House(Basement basement, Walls walls, Door door)
         {
+            
             this.door = new Door();
+            Console.WriteLine("Overload constructor (Basement, Walls, Door)");
         }
 
         public House(Basement basement, Walls walls, Door door, Window window)
         {
             this.window = new Window();
-
+            Console.WriteLine("Overload constructor (Basement, Walls, Door, Window)");
         }
 
-        public House(Basement basement, Walls walls, Door door, Window window, Roof roof) //: this(basement, walls, door, window) : this (basement, walls, door) : this (basement, walls) : this (basement)
+    
+
+        public House(Basement basement, Walls walls, Door door, Window window, Roof roof)
         {
             this.roof = new Roof();
+            Console.WriteLine("Overload constructor (Basement, Walls, Door, Window, Roof)");
         }
        
 
@@ -64,8 +74,7 @@ namespace Classwork20200304_House
         }
 
 
-        public Walls Walls
-        {
+        public Walls Walls  {
             get { return walls; }
             set { walls = value; }
         }
@@ -76,7 +85,7 @@ namespace Classwork20200304_House
             set { window = value; }
         }
 
-        public virtual void ShowData()
+        public void ShowData()
         {
             Console.WriteLine("I am a house");
 

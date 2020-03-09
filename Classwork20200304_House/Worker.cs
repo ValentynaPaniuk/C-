@@ -6,49 +6,36 @@ using System.Threading.Tasks;
 
 namespace Classwork20200304_House
 {
-    class Worker
+    class Worker:IWorker
     {
 
-        protected string name;
-        protected House house;
+        protected string name { get; set; }
+        protected House house { get; set; }
 
-        public Worker()
-        {
-            name = "Stive";
-            house = new House();
-        }
+        public Worker()  {  Console.WriteLine("Default constructor"); }
 
         public Worker(string name, House house)
         {
             this.name = name;
             this.house = house;
+            Console.WriteLine("Overload constructor(Name,House)");
         }
 
-        public string Name
-        {
-            get { return name; }
-            set { name = value; }
-        }
-        public House House
-        {
-            get { return house; }
-            set { house = value; }
-        }
-
-
+       
         
-        public void ShowData()
+        public void Work()
         {
             Console.WriteLine("My name is {0}.", name);
-                             
+        }
+
+        public void ShowHouse()
+        {
+            house.ShowData();
             house.Basement.ShowData();
             house.Walls.ShowData();
             house.Door.ShowData();
             house.Window.ShowData();
             house.Roof.ShowData();
-
-
-
         }
     }
     
