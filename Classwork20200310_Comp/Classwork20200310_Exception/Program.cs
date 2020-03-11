@@ -11,6 +11,8 @@ namespace Classwork20200310_Exception
         static void Main(string[] args)
         {
             Comp computer = new Comp(2,3);
+            
+            
            
 
             

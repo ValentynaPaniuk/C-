@@ -8,7 +8,7 @@ namespace Classwork20200310_Exception
 {
     class Monitor : IPrintInformation
     {
-        string Name;
+        string Name = "Monitor";
         public string GetName()
         {
             return this.Name;

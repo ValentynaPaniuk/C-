@@ -8,7 +8,7 @@ namespace Classwork20200310_Exception
 {
     class Printer: IPrintInformation
     {
-        string Name;
+        string Name = "Printer";
         public string GetName()
         {
             return this.Name;

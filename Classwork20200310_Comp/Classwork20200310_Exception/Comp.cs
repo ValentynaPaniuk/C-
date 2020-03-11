@@ -11,6 +11,7 @@ namespace Classwork20200310_Exception
         int countDisk;
         int countPrintDevice;
         List<Disk> list = new List<Disk>();
+        List<IPrintInformation> printDevice = new List<IPrintInformation>();
 
         public Comp(int d, int pd)
         {
@@ -33,27 +34,25 @@ namespace Classwork20200310_Exception
         {
             if (index == 0)
             {
-                list.Add(d);
+               list.Add(d = new CD());
             }
             else if (index == 1)
             {
-                list.Add(d);
+               list.Add(d = new HDD());
             }
             else if (index == 2)
             {
-                list.Add(d);
+                list.Add(d = new Flash());
             }
             else if (index == 3)
             {
-                list.Add(d);
+                list.Add(d = new DVD());
             }
-
-
         }
-       //public bool CheckDisk(string device)
-       // {
-         
-       // }
+        //public bool CheckDisk(string device)
+        //{
+            
+        //}
         //public void InsertReject(string device, bool b)
         //{
 
@@ -62,7 +61,7 @@ namespace Classwork20200310_Exception
         //{
 
         //}
-       // public string ReadInfo(string device)
+        // public string ReadInfo(string device)
         //{
 
         //}
@@ -75,7 +74,10 @@ namespace Classwork20200310_Exception
         }
         public void ShowPrintDevice()
         {
-
+            foreach (var e in printDevice)
+            {
+                e.Print(e.GetName());
+            }
         }
         //bool WriteInfo(string text, string showDevice)
         //{
