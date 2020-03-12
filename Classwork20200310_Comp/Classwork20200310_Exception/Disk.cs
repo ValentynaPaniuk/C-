@@ -14,7 +14,7 @@ namespace Classwork20200310_Exception
         string MemSize { get; set; }
 
         public Disk() { }
-        Disk(string memory, int memSize)
+        public Disk(string memory, int memSize)
         {
             this.memory = memory;
             this.memSize = memSize;
@@ -27,7 +27,7 @@ namespace Classwork20200310_Exception
 
         public void Write(string text)
         {
-            Console.WriteLine($"{text}");
+            Console.WriteLine($"Disk {text}");
         }
     }
 }

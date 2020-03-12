@@ -15,12 +15,12 @@ namespace Classwork20200310_Exception
 
         public void Insert()
         {
-            hasDisk = true;
+            this.hasDisk = true;
         }
 
         public void Reject()
         {
-            hasDisk = false;
+            this.hasDisk = false;
         }
         public string GetName()
         {
