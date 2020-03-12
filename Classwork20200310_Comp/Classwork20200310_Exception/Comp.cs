@@ -17,6 +17,9 @@ namespace Classwork20200310_Exception
         {
             this.countDisk = d;
             this.countPrintDevice = pd;
+            //this.list = new List();
+
+            
         }
 
         public void AddDevice(int index, IPrintInformation si)
@@ -32,22 +35,8 @@ namespace Classwork20200310_Exception
         }
         public void AddDisk(int index, Disk d)
         {
-            if (index == 0)
-            {
-               list.Add(d = new CD());
-            }
-            else if (index == 1)
-            {
-               list.Add(d = new HDD());
-            }
-            else if (index == 2)
-            {
-                list.Add(d = new Flash());
-            }
-            else if (index == 3)
-            {
-                list.Add(d = new DVD());
-            }
+            index--;
+            list.Add(d);
         }
         //public bool CheckDisk(string device)
         //{
