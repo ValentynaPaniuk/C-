@@ -43,18 +43,40 @@ namespace Homework20200309_Storage
             ■ расчет общего количества памяти всех устройств;
             ■ копирование информации на устройства;
             ■ расчет времени необходимого для копирования;
-            ■ расчет необходимого количества носителей информации представленных типов для переноса
-            информации. п*/
+            ■ расчет необходимого количества носителей информации представленных типов для переноса информации. п*/
 
+            Storage PC = new HDD("Winchester", "5.0", 7200, 1, 576);
+
+            Storage HDD = new HDD("HDD", "3.0", 7200, 1, 300);
+            Storage flash = new Flash("Flash", "1.3", 400, 250);
+            Storage DVD = new DVD("DVD", "0.8", 40, 80, 2);
            
+            Console.WriteLine("========= HDD ===================\n");
+            HDD.AllInformationMemory();
+            HDD.CopyFile();
+            HDD.FreeMemory();
 
-            Storage one = new HDD("HDD", "3.0", 300, 3, 300);
-            Storage two = new Flash("Flash", "1.3", 400, 800);
-            //string name, string model, int readSpeed, int recordingSpeed, double type
-            Storage tree = new DVD("DVD", "0.8", 40, 80, 80.6);
+            Console.WriteLine("==================== FLASH ==================\n");
+            flash.AllInformationMemory();
+            flash.CopyFile();
+            flash.FreeMemory();
+
+            Console.WriteLine("=================== DVD =================\n");
+            DVD.AllInformationMemory();
+            DVD.CopyFile();
+            DVD.FreeMemory();
+
+            List<Storage> info = new List<Storage>();
+            info.Add(HDD);
+            info.Add(flash);
+            info.Add(DVD);
+
+            foreach (var e in info)
+            {
+               
+            }
 
 
-          
         }
     }
 }

@@ -21,6 +21,7 @@ namespace Homework20200309_Storage
         string Name { get; set; }
         string Model { get; set; }
 
+       
         public Storage(string name, string model) { this.Name = name; this.Model = model; }
 
         public abstract double GetMemorySize();

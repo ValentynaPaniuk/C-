@@ -29,6 +29,7 @@ namespace Classwork20200311_Partial_class
 
         public string ReturnProduct()
         {
+
             return $"Product name: {this.Name}\t Size: {this.Size}\tPrice: {this.Price}";
         }
     }

@@ -14,7 +14,7 @@ namespace Classwork20200311_Partial_class
               * метод string ReturnString();*/
 
         readonly string Name;
-        Employee [] Arr;
+        public Employee [] Arr;
 
         public Department(string name, Employee []arr)
         {
@@ -24,22 +24,16 @@ namespace Classwork20200311_Partial_class
         }
 
 
-        public void ShowInfo()
-        {
-            foreach (var e in Arr)
-            {
-                Console.WriteLine(e.ReturnEmployeer());
-            }
-        }
+        
         public string ReturnDepartment()
         {
-            Console.WriteLine($"Department name {this.Name}: ");
+            Console.WriteLine($"    Department name: {this.Name} ");
             foreach (var e in Arr)
             {
                 Console.WriteLine(e.ReturnEmployeer());
             }
 
-            return this.Name;
+            return $"  Department ===>>>> {this.Name}";
         }
 
     }

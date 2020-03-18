@@ -56,9 +56,47 @@ namespace Classwork20200311_Partial_class
 
              */
 
-            Product one("ffd", 20.2.3);
+            Product[] products = new Product[3];
+            products[0] = new Product("bread", 1, 13);
+            products[1] = new Product("water", 2, 24);
+            products[2] = new Product("sugar", 1, 18);
+       
+                        
+            Employee[] employeer_department_one = new Employee[3];
+            employeer_department_one[0] = new Employee("Victor", 22, 3500);
+            employeer_department_one[1] = new Employee("Slavik", 19, 3400);
+            employeer_department_one[2] = new Employee("Anton", 22, 3600);
             
+
+            Employee[] employeer_department_two = new Employee[3];
+            employeer_department_two[0] = new Employee("Andriy", 28, 3500);
+            employeer_department_two[1] = new Employee("Petro", 19, 3400);
+            employeer_department_two[2] = new Employee("Kira", 22, 3600);
+
+
+            Department[] departments = new Department[2];
+
+            Console.WriteLine("===================== DEPARTMENTS ===========================");
+            departments[0] = new Department("One department", employeer_department_one);
+            departments[1] = new Department("Two department", employeer_department_two);
+
+            Department one = new Department("One Department", employeer_department_one);
+            Console.WriteLine(one.ReturnDepartment());
+            Department two = new Department("Two Department", employeer_department_two);
+            Console.WriteLine(two.ReturnDepartment());
+
+            Department[] allDepartments = new Department[2];
+            allDepartments[0] = one;
+            allDepartments[1] = two;
+            Console.WriteLine("===================== DEPARTMENTS ===========================");
+            Console.WriteLine("\n");
             
+            Factory myFactory = new Factory ("Factory new", allDepartments, products);
+            myFactory.ReturnString();
+
+
+
+
         }
     }
 }
