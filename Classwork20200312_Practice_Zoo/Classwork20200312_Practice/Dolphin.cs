@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Classwork20200312_Practice
 {
-    class Dolphin:Owl,IFloating
+    class Dolphin: Savetz, IFloating
     {
         public Dolphin(string name) : base(name) { }
 

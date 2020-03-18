@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Classwork20200312_Practice
 {
-    class Bear : Owl, IRunning
+    class Bear : Savetz, IRunning
     {
         public Bear(string name) : base(name) { }
 
@@ -17,13 +17,11 @@ namespace Classwork20200312_Practice
 
         
 
-        public void Sleep()
+       
+
+        public void Hugar()
         {
-            Console.WriteLine($"{this.Name} is sleeping.");
-        }
-        public void Wool()
-        {
-            Console.WriteLine($"{this.Name} has wool");
+            Console.WriteLine($"{this.Name} love hugar");
         }
 
 

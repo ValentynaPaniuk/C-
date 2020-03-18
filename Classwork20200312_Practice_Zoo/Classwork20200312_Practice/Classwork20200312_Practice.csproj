@@ -55,7 +55,7 @@
     <Compile Include="IFloating.cs" />
     <Compile Include="IFlying.cs" />
     <Compile Include="IRunning.cs" />
-    <Compile Include="Owl.cs" />
+    <Compile Include="Savetz.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reptile.cs" />
