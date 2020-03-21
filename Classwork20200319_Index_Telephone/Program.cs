@@ -37,6 +37,9 @@ namespace Classwork20200319_Index_Telephone
             Phonebook book = new Phonebook(10);
             book.ShowInfo();
             book.AddNewPhone();
+            book.ShowInfo();
+            book.EditingData();
+           
         }
     }
 }
