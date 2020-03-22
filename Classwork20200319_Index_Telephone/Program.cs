@@ -39,6 +39,7 @@ namespace Classwork20200319_Index_Telephone
             book.AddNewPhone();
             book.ShowInfo();
             book.EditingData();
+            book.ShowInfo();
            
         }
     }

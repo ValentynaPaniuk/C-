@@ -69,21 +69,26 @@ namespace Classwork20200319_Index_Telephone
         public void EditingData()
         {
             Console.WriteLine($"Whose number do you want to change ?: ");
-            string name = Console.ReadLine();
+            string x = Console.ReadLine();
+            
             bool exit = false;
             while (!exit)
             {
                 for (int i = 0; i < this.size; i++)
                 {
-                    if (this.name[i] == name)
+                    //Console.WriteLine($"X =: {x}   this.name = {this.name[i]} ");
+                    if (this.name[i] == x)
                     {
+                        Console.WriteLine("Enter the correct phone number: ");
                         this.phone[i] = int.Parse(Console.ReadLine());
-                    }
-                    else
-                    {
-                        Console.WriteLine($"No such name was found");
                         exit = true;
                     }
+
+                }
+                 if(!exit)
+                 {
+                    Console.WriteLine($"No such name was found");
+
                 }
             }
 
