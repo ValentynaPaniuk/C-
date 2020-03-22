@@ -8,6 +8,7 @@ namespace Classwork20200311_Partial_class
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
             /* 1. Class Factory, містить авто-властивість 
@@ -57,9 +58,9 @@ namespace Classwork20200311_Partial_class
              */
 
             Product[] products = new Product[3];
-            products[0] = new Product("bread", 1, 13);
-            products[1] = new Product("water", 2, 24);
-            products[2] = new Product("sugar", 1, 18);
+            products[0] = new Product("System block", 1, 22000);
+            products[1] = new Product("Monitor", 1, 8000);
+            products[2] = new Product("Printer", 1, 4500);
        
                         
             Employee[] employeer_department_one = new Employee[3];
@@ -76,27 +77,35 @@ namespace Classwork20200311_Partial_class
 
             Department[] departments = new Department[2];
 
-            Console.WriteLine("===================== DEPARTMENTS ===========================");
-            departments[0] = new Department("One department", employeer_department_one);
-            departments[1] = new Department("Two department", employeer_department_two);
+           // Console.WriteLine("===================== DEPARTMENTS ===========================");
+           
 
             Department one = new Department("One Department", employeer_department_one);
-            Console.WriteLine(one.ReturnDepartment());
             Department two = new Department("Two Department", employeer_department_two);
-            Console.WriteLine(two.ReturnDepartment());
+            
+
+            //Console.WriteLine(one.ReturnDepartment());
+            //Console.WriteLine(two.ReturnDepartment());
+
 
             Department[] allDepartments = new Department[2];
             allDepartments[0] = one;
             allDepartments[1] = two;
-            Console.WriteLine("===================== DEPARTMENTS ===========================");
+           // Console.WriteLine("===================== DEPARTMENTS ===========================");
             Console.WriteLine("\n");
             
-            Factory myFactory = new Factory ("Factory new", allDepartments, products);
+            Factory myFactory = new Factory ("SONY", allDepartments, products);
             myFactory.ReturnString();
 
 
 
 
+
         }
+
+        
+
+
+
     }
 }

@@ -13,7 +13,7 @@ namespace Classwork20200311_Partial_class
               * масив Employees[], 
               * метод string ReturnString();*/
 
-        readonly string Name;
+        public readonly string Name;
         public Employee [] Arr;
 
         public Department(string name, Employee []arr)
@@ -23,17 +23,19 @@ namespace Classwork20200311_Partial_class
 
         }
 
-
         
+
+
+
         public string ReturnDepartment()
         {
-            Console.WriteLine($"    Department name: {this.Name} ");
+            Console.WriteLine($"   Department name: {this.Name} ");
             foreach (var e in Arr)
             {
                 Console.WriteLine(e.ReturnEmployeer());
             }
 
-            return $"  Department ===>>>> {this.Name}";
+            return this.Name;
         }
 
     }

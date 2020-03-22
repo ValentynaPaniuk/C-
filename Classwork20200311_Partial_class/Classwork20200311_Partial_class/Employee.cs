@@ -17,9 +17,9 @@ namespace Classwork20200311_Partial_class
              * метод string ReturnString(); 
          */
 
-        string Name { get; set; }
-        int Age { get; set; }
-        decimal Salary { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public decimal Salary { get; set; }
 
 
         public Employee(string Name, int age, decimal salary)
@@ -33,5 +33,8 @@ namespace Classwork20200311_Partial_class
         {
             return $"Employee name: {this.Name}\t Age: {this.Age}\t Salary: {this.Salary}";
         }
+        
     }
+
+   
 }

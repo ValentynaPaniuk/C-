@@ -14,21 +14,25 @@ namespace Classwork20200311_Partial_class
 
         public string ReturnString()
         {
-            Console.WriteLine($"Factory name: {this.Name}");
+            Console.WriteLine($" ============== FACTORY NAME: {this.Name} =======================");
 
-            Console.WriteLine("===================== Products on the factory ===========================");
+            Console.WriteLine($"Products on the factory \"{this.Name}\":");
+            Console.WriteLine($"===========================================================");
             foreach (var e in Products)
             {
                 Console.WriteLine(e.ReturnProduct());
             }
-            Console.WriteLine("===================== Products on the factory ===========================");
+            Console.WriteLine($"===========================================================");
             Console.WriteLine("\n");
-            Console.WriteLine("===================== Department on the factory ===========================");
+            Console.WriteLine($"===========================================================");
+            Console.WriteLine($"Department on the factory \"{this.Name}\":");
+            Console.WriteLine($"===========================================================");
+
             foreach (var e in Departments)
             {
                 Console.WriteLine(e.ReturnDepartment());
             }
-            Console.WriteLine("===================== Department on the factory ===========================");
+            Console.WriteLine($"===========================================================");
 
             return $"Factory name: {this.Name}";
 
@@ -37,11 +41,11 @@ namespace Classwork20200311_Partial_class
         //5.Оголошення часткових методів зробити в 1й частині, а реалізацію виконати в 2частині класу (в іншому файлі) 
         partial void SetAvgSalary() //встановлення для відповідного приватного поля середньої ЗП по підприємству 
         {
-            
+           
         }
         partial void SetTotalSalary() //встановлення для відповідного приватного поля сумарної ЗП 
         {
-
+            
         }
         partial void SetGDP() //встановлення для відповідного приватного поля валового доходу на 1го працівника - сума вартості всіх товарів / на кількість працівників 
         {
