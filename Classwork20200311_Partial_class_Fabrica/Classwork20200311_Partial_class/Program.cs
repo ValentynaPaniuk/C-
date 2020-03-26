@@ -57,45 +57,72 @@ namespace Classwork20200311_Partial_class
 
              */
 
-            Product[] products = new Product[3];
-            products[0] = new Product("System block", 1, 22000);
-            products[1] = new Product("Monitor", 1, 8000);
-            products[2] = new Product("Printer", 1, 4500);
-       
-                        
-            Employee[] employeer_department_one = new Employee[3];
-            employeer_department_one[0] = new Employee("Victor", 22, 3500);
-            employeer_department_one[1] = new Employee("Slavik", 19, 3400);
-            employeer_department_one[2] = new Employee("Anton", 22, 3600);
-            
+            //Product[] products = new Product[3];
+            //products[0] = new Product("System block", 1, 22000);
+            //products[1] = new Product("Monitor", 1, 8000);
+            //products[2] = new Product("Printer", 1, 4500);
+                     
+         
 
-            Employee[] employeer_department_two = new Employee[3];
-            employeer_department_two[0] = new Employee("Andriy", 28, 3500);
-            employeer_department_two[1] = new Employee("Petro", 19, 3400);
-            employeer_department_two[2] = new Employee("Kira", 22, 3600);
+            // Console.WriteLine("===================== DEPARTMENTS ===========================");
 
 
-            Department[] departments = new Department[2];
+          
 
-           // Console.WriteLine("===================== DEPARTMENTS ===========================");
            
 
-            Department one = new Department("One Department", employeer_department_one);
-            Department two = new Department("Two Department", employeer_department_two);
-            
-
-            //Console.WriteLine(one.ReturnDepartment());
-            //Console.WriteLine(two.ReturnDepartment());
-
-
-            Department[] allDepartments = new Department[2];
-            allDepartments[0] = one;
-            allDepartments[1] = two;
-           // Console.WriteLine("===================== DEPARTMENTS ===========================");
-            Console.WriteLine("\n");
-            
-            Factory myFactory = new Factory ("SONY", allDepartments, products);
+            Factory myFactory = new Factory("SONY");
             myFactory.ReturnString();
+
+            bool exit = false;
+            
+            while (!exit)
+            {
+                Console.WriteLine("1 - All Salary;\n2 - Average salary;\n3 - Gross income;\n4 - total number of employees;\n0 - Exit");
+                int choice = int.Parse(Console.ReadLine());
+
+                switch (choice)
+                {
+                    case 1:
+                        {
+                            myFactory.SetTotalSalary();
+                            Console.WriteLine("\n");
+                            break;
+                        }
+                    case 2:
+                        {
+                            myFactory.SetAvgSalary();
+                            Console.WriteLine("\n");
+                            break;
+                        }
+                    case 3:
+                        {
+                            myFactory.SetGDP();
+                            Console.WriteLine("\n");
+                            break;
+                        }
+                    case 4:
+                        {
+                            myFactory.SetEmpCount();
+                            Console.WriteLine("\n");
+                            break;
+                        }
+                    case 0:
+                        {
+                            exit = true;
+                            break;
+                        }
+                  
+
+                }
+
+            }
+
+
+           
+            
+
+            
 
 
 

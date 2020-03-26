@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Classwork20200311_Partial_class
 {
-    partial class Factory
+    public partial class Factory
     {
         /* 1. Class Factory, містить авто-властивість 
             * string Name, 
@@ -23,12 +23,34 @@ namespace Classwork20200311_Partial_class
         
 
         public Factory() { }
-        public Factory(string name,  Department[] departments, Product[] products)
-        {
+        public Factory(string name)
+         {
             this.Name = name;   
-            this.Departments = departments;
-            this.Products = products;
+            Console.WriteLine($"How many Departments will be in the factory \"{this.Name}\":");
+            int x = int.Parse(Console.ReadLine());
+            this.Departments = new Department[x];
+            for (int i = 0; i < this.Departments.Length; i++)
+            {
+                Console.WriteLine($"   DEPARTMENT N{i + 1}=> ");
+                this.Departments[i] = new Department();
+            }
+            Console.WriteLine($"How many Products will be in the factory \"{this.Name}\":");
+            int y = int.Parse(Console.ReadLine());
+            this.Products = new Product[y];
+            for (int i = 0; i < this.Products.Length; i++)
+            {
+                Console.WriteLine($"   PRODUCT N{i + 1}=> ");
+                this.Products[i] = new Product();
+            }
 
+        }
+
+        public void ShowDep()
+        {
+            for (int i = 0; i < Departments.Length; i++)
+            {
+                Departments[i].ReturnDepartment();
+            }
         }
 
         /*
@@ -40,13 +62,13 @@ d)Void SetEmpCount - встановлення для відповідного п
         */
 
         //5.Оголошення часткових методів зробити в 1й частині
-        partial void SetAvgSalary();
+        //public void SetAvgSalary();
 
-        partial void SetTotalSalary();
+        //public void SetTotalSalary();
 
-        partial void SetGDP();
+        //public void SetGDP();
 
-        partial void SetEmpCount();
+        //public void SetEmpCount();
 
 
 

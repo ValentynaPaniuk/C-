@@ -22,16 +22,25 @@ namespace Classwork20200311_Partial_class
         public decimal Salary { get; set; }
 
 
-        public Employee(string Name, int age, decimal salary)
+        public Employee()
         {
-            this.Name = Name;
-            this.Age = age;
-            this.Salary = salary;
+            Console.WriteLine("Enter employees Name: ");
+            this.Name = Console.ReadLine();
+            Console.WriteLine("Enter employees Age: ");
+            this.Age = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter employees Salary: ");
+            this.Salary = decimal.Parse(Console.ReadLine());
         }
 
         public string ReturnEmployeer()
         {
             return $"Employee name: {this.Name}\t Age: {this.Age}\t Salary: {this.Salary}";
+        }
+
+
+        public decimal ReturnSalary()
+        {
+            return this.Salary;
         }
         
     }

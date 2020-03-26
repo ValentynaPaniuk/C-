@@ -19,11 +19,14 @@ namespace Classwork20200311_Partial_class
         double Price { get; set; }
 
        
-        public Product(string name, int size, double price)
+        public Product()
         {
-            this.Name = name;
-            this.Size = size;
-            this.Price = price;
+            Console.WriteLine($"Enter Name of Product: ");
+            this.Name = Console.ReadLine();
+            Console.WriteLine($"Enter Size of Product: ");
+            this.Size = int.Parse(Console.ReadLine());
+            Console.WriteLine($"Enter Price of Product: ");
+            this.Price = double.Parse(Console.ReadLine());
         }
 
 
@@ -31,6 +34,11 @@ namespace Classwork20200311_Partial_class
         {
 
             return $"Product name: {this.Name}\t Size: {this.Size}\tPrice: {this.Price}";
+        }
+
+        public double ReturnValueGoods()
+        {
+            return this.Price * this.Size;
         }
     }
 }
