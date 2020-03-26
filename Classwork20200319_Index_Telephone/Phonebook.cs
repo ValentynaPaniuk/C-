@@ -22,18 +22,29 @@ namespace Classwork20200319_Index_Telephone
             this.phone = new int[this.size];
             this.name = new string[this.size];
             this.date = new string[this.size];
-            for (int i = 0; i < this.size / 2; i++)
+            for (int i = 0; i < this.size ; i++)
             {
-             
-               this.phone[i] = x.Next(11111,99999);
-                Console.WriteLine($"Phone number {i+1}:  {this.phone[i]}");
-              
-                Console.WriteLine($"Name {i+1}: ");
-              this.name[i] = Console.ReadLine();
+
+                if (i < this.size / 2)
+                {
+                    this.phone[i] = x.Next(11111, 99999);
+                    Console.WriteLine($"Phone number {i + 1}:  {this.phone[i]}");
+
+                    Console.WriteLine($"Name {i + 1}: ");
+                    this.name[i] = Console.ReadLine();
 
 
-                Console.WriteLine($"Date: ");
-                this.date[i] = Console.ReadLine();
+                    Console.WriteLine($"Date: ");
+                    this.date[i] = Console.ReadLine();
+                }
+
+                else
+                {
+                    this.phone[i] = 0;
+                    this.name[i] = "Enter name";
+                    this.date[i] = "0";
+
+                }
 
             }
 
@@ -99,6 +110,8 @@ namespace Classwork20200319_Index_Telephone
             get { return this.phone[index]; }
             set { this.phone[index] = value; }
         }
+
+       
 
     }
 }
