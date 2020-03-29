@@ -43,11 +43,14 @@ namespace Classwork202003_Car
                 
             }
             Console.WriteLine(" ========================== ");
-            foreach (var e in car)
+            for (int i = 0; i<car.Length; i++)
             {
-                e.ShowInfo();
-                Menu(e);
+                Console.WriteLine($"The car N{i+1}: ");
+                car[i].ShowInfo();
+                Menu(car[i]);
+
             }
+
 
 
         }
@@ -88,23 +91,31 @@ namespace Classwork202003_Car
                 switch (choice)
                 {
                     case 1: car.RegisterMsg(car.Start);
-                       break;
+                        Console.ReadLine();
+                        break;
                     case 2: car.RegisterMsg(car.Accelerate);
+                        Console.ReadLine();
                         break;
                     case 3: car.RegisterMsg(FullStop);
+                        Console.ReadLine();
                         break;
                     case 4: car.RegisterMsg(Brake);
+                        Console.ReadLine();
                         break;
                     case 5: car.RegisterMsg(Refuel);
                         break;
                     case 6: car.RegisterMsg(Repair);
+                        Console.ReadLine();
                         break;
                     case 7: car.RegisterMsg(TurnLeft);
+                        Console.ReadLine();
                         break;
                     case 8: car.RegisterMsg(TurnRight);
+                        Console.ReadLine();
                         break;
                     case 9:
                         car.RegisterMsg(СhangeTire);
+                        Console.ReadLine();
                         break;
                     case 0:
                         exit = true;
