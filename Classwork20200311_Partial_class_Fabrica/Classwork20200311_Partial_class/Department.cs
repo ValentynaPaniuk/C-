@@ -15,7 +15,7 @@ namespace Classwork20200311_Partial_class
 
         public readonly string Name;
         public Employee [] Arr;
-        public decimal sum = 0;
+      
 
         public Department()
         {
@@ -47,6 +47,7 @@ namespace Classwork20200311_Partial_class
 
         public decimal ReturnAllDepartmentSalary()
         {
+            decimal sum = 0;
             foreach (var e in Arr)
             {                
                 sum += e.ReturnSalary();

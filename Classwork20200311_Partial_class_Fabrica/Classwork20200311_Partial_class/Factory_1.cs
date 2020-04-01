@@ -41,27 +41,13 @@ namespace Classwork20200311_Partial_class
         //5.Оголошення часткових методів зробити в 1й частині, а реалізацію виконати в 2частині класу (в іншому файлі) 
         public void SetAvgSalary() //встановлення для відповідного приватного поля середньої ЗП по підприємству 
         {
-            decimal sum = 0;
-            foreach (var e in Departments)
-            {
-                sum += e.ReturnAllDepartmentSalary();
-            }
 
-           
-            int num = 0;
-            foreach (var e in Departments)
-            {
-                num += e.ReturnNumberEmploeyees();
-
-            }
-
-            Console.WriteLine($"ALL SALARY = {sum}");
-            Console.WriteLine($"EMPLOYEERS = {num}");
-
-            decimal Avarage = sum / num;
+            Console.WriteLine($"All salary {SetTotalSalary()} / All employees {SetEmpCount()}");
+            decimal Avarage = SetTotalSalary() / SetEmpCount();
             Console.WriteLine($"Avarage salary = {Avarage}");
         }
-        public void SetTotalSalary() //встановлення для відповідного приватного поля сумарної ЗП 
+
+        public decimal SetTotalSalary() //встановлення для відповідного приватного поля сумарної ЗП 
         {
             decimal sumFabricaSalary = 0;
             foreach (var e in Departments)
@@ -70,7 +56,7 @@ namespace Classwork20200311_Partial_class
             }
             Console.WriteLine($"All salary = {sumFabricaSalary}");
 
-          
+            return sumFabricaSalary;
         }
         public void SetGDP() //встановлення для відповідного приватного поля валового доходу на 1го працівника - сума вартості всіх товарів / на кількість працівників 
         {
@@ -90,7 +76,7 @@ namespace Classwork20200311_Partial_class
             double grossIncome = totalValueGoods / number;
             Console.WriteLine($"Gross income:  {grossIncome}");
         }
-        public void SetEmpCount()//встановлення для відповідного поля загальної кількості працюючих 
+        public int SetEmpCount()//встановлення для відповідного поля загальної кількості працюючих 
         {
             Console.WriteLine($"All employees in the factory \"{this.Name}\": ");
             int number = 0;
@@ -100,7 +86,8 @@ namespace Classwork20200311_Partial_class
 
             }
             Console.WriteLine($"{number}");
-           
+
+            return number;
         } 
 
 
